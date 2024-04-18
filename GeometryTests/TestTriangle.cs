@@ -19,13 +19,13 @@ namespace GeometryTests
         public void PerimeterofTriangle()
         {
             var triangle = new Triangle( 2, 8, 6 , 6);
-            var result =triangle.CalculateArea();
+            var result =triangle.CalculatePerimeter();
             Assert.AreEqual(14 , result);
         }
           public void PerimeterofTri()
         {
             var triangle = new Triangle( 2, 4, 2 , 3);
-            var result =triangle.CalculateArea();
+            var result =triangle.CalculatePerimeter();
             Assert.AreEqual(7, result);
         }
         

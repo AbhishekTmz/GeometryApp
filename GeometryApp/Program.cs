@@ -48,7 +48,6 @@ class Program
             double length = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Enter breadth for Rectangle:");
             double breadth = Convert.ToDouble(Console.ReadLine());
-            // Use length and width in your application for rectangle calculations
             double AreaofRect = length * breadth;
             double PerimeterofRect = 2 * (length + breadth);
             Console.WriteLine($"Area of Rectangle: {AreaofRect}");
@@ -57,7 +56,6 @@ class Program
         else
         {
             Console.WriteLine("Number is incorect for Rectangle.");
-            // Handle when Rectangle feature is disabled
         }
 
         if (await featureManager.IsEnabledAsync("Triangle"))
@@ -67,9 +65,8 @@ class Program
             double baseLength = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Enter height for Triangle:");
             double height = Convert.ToDouble(Console.ReadLine());
-            // Use baseLength and height in your application for triangle calculations
             double Areaoftriangle = 0.5 * baseLength * height;
-            double PerimeterOfTri = 3 * baseLength; // Assuming equilateral triangle
+            double PerimeterOfTri = 3 * baseLength; 
             Console.WriteLine($"Area of Triangle: {Areaoftriangle}");
             Console.WriteLine($"Perimeter of Triangle: {PerimeterOfTri}");
         }
