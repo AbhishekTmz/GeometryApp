@@ -9,7 +9,7 @@ public class Square : IShape
 
     public double CalculateArea()
     {
-        return  * Length;
+        return  Length * Length;
     }
 
     public double CalculatePerimeter()
